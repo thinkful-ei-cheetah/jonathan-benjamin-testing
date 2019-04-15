@@ -2,6 +2,8 @@ import React from 'react';
 import Card from './Card.js';
 
 export default function List(props) {
+
+    return (
     <div className="App-list">
         <section className="List">
             <header className="List-header">
@@ -18,4 +20,5 @@ export default function List(props) {
             </div>
         </section>
     </div>
+    )
 }

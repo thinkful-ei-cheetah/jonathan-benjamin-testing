@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import List from './List.js';
 
 class App extends Component {
   render() {
+    console.log(this.props)
     return (
       <div className="App-list">
-        {this.props.lists.map((list) =>
+        {this.props.store.lists.map((list) =>
           <List
               key={list.id}
               header={list.header}
               cards={ 
-                 list.cardIds.map(key => {
-                   list.allCards[key]
-                   
-                 })
-                }
+                 list.cardIds.map(key => (
+                  this.props.store.allCards[key]       
+                 )
+                 )}
                 />    
         )}
         </div>
