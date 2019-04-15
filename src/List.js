@@ -1,9 +1,11 @@
 import React from 'react';
 import Card from './Card.js';
+import './List.css';
 
 export default function List(props) {
-
+    console.log(props.cards);
     return (
+
     <div className="App-list">
         <section className="List">
             <header className="List-header">

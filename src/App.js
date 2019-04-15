@@ -4,7 +4,6 @@ import List from './List.js';
 
 class App extends Component {
   render() {
-    console.log(this.props)
     return (
       <div className="App-list">
         {this.props.store.lists.map((list) =>
